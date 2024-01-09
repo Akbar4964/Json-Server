@@ -731,5 +731,4 @@ function searchClick(event) {
     getPost();
   }
 }
-
 elSideSearch.addEventListener("click", searchClick);
