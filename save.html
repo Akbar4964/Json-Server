@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="
+    https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js
+    "></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css
+"
+      rel="stylesheet"
+    />
+    <title>JSON-SERVER</title>
+  </head>
+  <body>
+    <div class="loading hidden">
+      <div class="loader">
+        <div class="load"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <nav class="navbar">
+          <a href="./index.html"
+            ><div class="logo"><img src="./assets/images/asd.jpg" alt="" /></div
+          ></a>
+          <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><input type="text" placeholder="Search..." /></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li>
+              <a class="saving mix" href=""
+                ><span class="save-number"></span>Save</a
+              >
+            </li>
+            <li><a href="./game.html">Add Game</a></li>
+          </ul>
+        </nav>
+        <div class="game-searching">
+          <div>
+            <div class="data"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row-button-list">
+      <div class="button-list"></div>
+    </div>
+    <template class="template">
+      <div class="cards">
+        <div class="card">
+          <div class="likes">
+            <!-- <?xml version="1.0" encoding="utf-8"?>Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <!-- <svg
+              class="js-like"
+              fill="yellow"
+              width="40px"
+              height="40px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="js-like"
+                d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 01-.686 0 16.709 16.709 0 01-.465-.252 31.147 31.147 0 01-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0114 20.408z"
+              />
+            </svg> -->
+            <img class="like" src="" alt="" />
+          </div>
+          <div class="saved">
+            <button class="btn-save">
+              <img class="save" src="" alt="" />
+            </button>
+          </div>
+          <div class="release-date"></div>
+          <img class="url" src="" alt="" />
+          <div class="name"></div>
+          <p class="author"></p>
+          <p class="developer"></p>
+          <p class="description"></p>
+          <p class="types"></p>
+          <p class="size"></p>
+        </div>
+      </div>
+    </template>
+    <script src="./src/js/save.js"></script>
+  </body>
+</html>

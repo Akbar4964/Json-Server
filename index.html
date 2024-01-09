@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="
+    https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js
+    "></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css
+"
+      rel="stylesheet"
+    />
+    <title>JSON-SERVER</title>
+  </head>
+  <body>
+    <div class="loading hidden">
+      <div class="loader">
+        <div class="load"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container">
+        <nav class="navbar">
+          <a href="./index.html"
+            ><div class="logo"><img src="./assets/images/asd.jpg" alt="" /></div
+          ></a>
+          <ul class="menu">
+            <li><a class="mix" href="./index.html">Home</a></li>
+            <li><input type="text" placeholder="Search..." /></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li>
+              <a class="saving" href="./save.html"
+                ><span class="save-number"></span>Save</a
+              >
+            </li>
+            <li><a href="./game.html">Add Game</a></li>
+          </ul>
+        </nav>
+        <!-- <div class="demo">0</div>
+        <button class="plus"></button> -->
+        <div class="game-searching">
+          <div>
+            <div class="data"></div>
+          </div>
+          <div class="side-search">
+            <div class="all">ALL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row-button-list">
+      <div class="button-list"></div>
+    </div>
+    <div id="myModals" class="modals">
+      <div class="modal-contents">
+        <h1>Do you want to delete?</h1>
+        <button class="reject cancel">CANCEL</button>
+        <div class="loading-all hidden">
+          <div class="loader-all">
+            <div class="load-all"></div>
+          </div>
+        </div>
+        <button class="accept">OK</button>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Click to add a type</h1>
+        <form class="modalForm">
+          <input
+            placeholder="write releaseDate..."
+            class="modal-input1"
+            type="date"
+          />
+          <input placeholder="write url..." class="modal-input2" type="text" />
+          <input placeholder="write name..." class="modal-input3" type="text" />
+          <input
+            placeholder="write author..."
+            class="modal-input4"
+            type="text"
+          />
+          <input
+            placeholder="write developer..."
+            class="modal-input5"
+            type="text"
+          />
+          <textarea
+            placeholder="write description..."
+            class="modal-input-description"
+          ></textarea>
+          <select class="modal-input6">
+            <option value="">Select type...</option>
+          </select>
+          <input placeholder="write size..." class="modal-input7" type="text" />
+          <br />
+          <div class="loading-edit hidden">
+            <div class="loader-edit">
+              <div class="load-edit"></div>
+            </div>
+          </div>
+          <button type="submit" class="type-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <template class="template">
+      <div class="cards">
+        <div class="card">
+          <div class="likes">
+            <!-- <?xml version="1.0" encoding="utf-8"?>Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <!-- <svg
+              class="js-like"
+              fill="yellow"
+              width="40px"
+              height="40px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="js-like"
+                d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 01-.686 0 16.709 16.709 0 01-.465-.252 31.147 31.147 0 01-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0114 20.408z"
+              />
+            </svg> -->
+            <img class="like" src="" alt="" />
+          </div>
+          <div class="saved">
+            <button class="btn-save">
+              <img class="save" src="" alt="" />
+            </button>
+          </div>
+          <div class="release-date"></div>
+          <img class="url" src="" alt="" />
+          <div class="name"></div>
+          <p class="author"></p>
+          <p class="developer"></p>
+          <div class="des-more">
+            <p class="description"></p>
+            <button class="more"></button>
+          </div>
+          <p class="types"></p>
+          <p class="size"></p>
+          <div class="btns">
+            <h1><button class="btn-delete">Delete</button></h1>
+            <h1><button class="btn-edit">Edit</button></h1>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template class="template1">
+      <option value="" class="type1"></option>
+    </template>
+    <template class="template2">
+      <div class="row-search">
+        <div class="search-type"></div>
+      </div>
+    </template>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/game.css" />
+    <script src="
+    https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js
+    "></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css
+"
+      rel="stylesheet"
+    />
+    <title>JSON-SERVER</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="container">
+        <nav class="navbar">
+          <a href="./index.html"
+            ><div class="logo"><img src="./assets/images/asd.jpg" alt="" /></div
+          ></a>
+          <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><input type="text" placeholder="Search..." /></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a class="mix" href="./game.html">Add Game</a></li>
+            <li><a class="add-type">Add Type</a></li>
+          </ul>
+        </nav>
+        <div class="game">
+          <form class="form">
+            <div>
+              <input
+                placeholder="write releaseDate..."
+                class="game-input1"
+                type="date"
+              />
+            </div>
+            <div>
+              <input
+                placeholder="write url..."
+                class="game-input2"
+                type="text"
+              />
+            </div>
+            <div>
+              <input
+                placeholder="write name..."
+                class="game-input3"
+                type="text"
+              />
+            </div>
+            <div>
+              <input
+                placeholder="write author..."
+                class="game-input4"
+                type="text"
+              />
+            </div>
+            <div>
+              <input
+                placeholder="write developer..."
+                class="game-input5"
+                type="text"
+              />
+            </div>
+            <div>
+              <textarea
+                placeholder="write description..."
+                class="game-input6"
+              ></textarea>
+            </div>
+            <div>
+              <select class="game-input7">
+                <option value="">Select type...</option>
+              </select>
+            </div>
+            <div>
+              <input
+                placeholder="write size..."
+                class="game-input8"
+                type="text"
+              />
+            </div>
+            <div>
+              <a class="link" href="./index.html">
+                <div class="loading-game hidden">
+                  <div class="loader-game">
+                    <div class="load-game"></div>
+                  </div>
+                </div>
+                <button class="game-btn">Add Game</button></a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Click to add a type</h1>
+        <form action="" class="modalForm">
+          <input placeholder="write type..." class="modal-input" type="text" />
+          <button class="type-btn">Add Type</button>
+        </form>
+      </div>
+    </div>
+    <template class="template1">
+      <option value="" class="type"></option>
+    </template>
+    <script src="./src/js/game.js"></script>
+  </body>
+</html>

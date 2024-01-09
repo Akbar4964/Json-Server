@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.form {
+  text-align: center;
+}
+
+.form > div > input {
+  width: 400px;
+  height: 45px;
+  border-radius: 15px;
+  border: 0;
+  outline-color: magenta;
+  outline-width: 5px;
+  padding: 0 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  box-shadow: 0 0 10px orange;
+  backdrop-filter: blur(5px);
+  background-color: inherit;
+  color: #fff;
+}
+
+.form > div > input:hover {
+  color: black;
+  background-color: greenyellow;
+}
+
+.form > div > input::placeholder {
+  color: #fff;
+}
+
+.form > div > input:hover::placeholder {
+  color: #000;
+}
+
+.form > div {
+  margin: 17px 0;
+}
+
+.form > div > a > button {
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: 0;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ccc;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.toast {
+  width: 300px;
+  height: 50px;
+  margin-top: 130px;
+}
+
+.game-input6 {
+  width: 400px;
+  max-width: 400px;
+  min-width: 400px;
+  height: 100px;
+  max-height: 100px;
+  min-height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  border-radius: 15px;
+  border: 0;
+  outline-color: magenta;
+  outline-width: 5px;
+  padding: 0 15px;
+  padding-top: 5px;
+  box-shadow: 0 0 10px orange;
+  backdrop-filter: blur(5px);
+  background-color: inherit;
+  color: #fff;
+}
+
+.game-input6::placeholder {
+  color: #fff;
+}
+
+.game-input7 {
+  width: 400px;
+  height: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  border-radius: 15px;
+  border: 0;
+  outline-color: magenta;
+  outline-width: 5px;
+  padding: 0 15px;
+  box-shadow: 0 0 10px orange;
+  backdrop-filter: blur(5px);
+  background-color: inherit;
+  color: #fff;
+  cursor: pointer;
+}
+
+.game-input7:hover {
+  color: black;
+  background-color: greenyellow;
+}
+
+.game-input1 {
+  color: #fff;
+  cursor: pointer;
+}
+
+.game-input6:hover::placeholder {
+  color: black;
+  background-color: greenyellow;
+}
+
+.game-input6:hover {
+  color: black;
+  background-color: greenyellow;
+}
+
+.game-input1:hover {
+  color: black;
+  background-color: greenyellow;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(2, 13, 128, 0.417);
+}
+
+.modal-content {
+  width: 500px;
+  height: 150px;
+  margin: 17% auto;
+  padding: 20px;
+  background-color: steelblue;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-input {
+  width: 300px;
+  height: 40px;
+  border: 0;
+  background-color: inherit;
+  box-shadow: inset 0 0 10px darkblue;
+  outline: 0;
+  margin: 10px 0;
+  padding: 0 10px;
+  color: #fff;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+
+.modal-input::placeholder {
+  color: #fff;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+}
+
+.type-btn {
+  width: 100px;
+  margin-left: 10px;
+  height: 40px;
+  border-radius: 15px;
+  border: 0;
+  background-color: yellow;
+  color: black;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.loading-game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.load-game {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transition: all ease 1s;
+  animation: rotate 1s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: scale(1.1);
+    border: 5px solid steelblue;
+    background-color: yellowgreen;
+  }
+  100% {
+    transform: scale(0.9);
+    border: 5px solid yellowgreen;
+    background-color: steelblue;
+  }
+}
+
+.loader-game {
+  position: absolute;
+  bottom: -7px;
+  left: 150px;
+}
+
+.link {
+  position: relative;
+}

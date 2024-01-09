@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/more.css" />
+    <script src="
+    https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js
+    "></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css
+"
+      rel="stylesheet"
+    />
+    <title>JSON-SERVER</title>
+  </head>
+  <body>
+    <div class="loading hidden">
+      <div class="loader">
+        <div class="load"></div>
+      </div>
+    </div>
+    <div class="more-row">
+      <div class="container">
+        <nav class="navbar">
+          <a href="./index.html"
+            ><div class="logo"><img src="./assets/images/asd.jpg" alt="" /></div
+          ></a>
+          <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><input type="text" placeholder="Search..." /></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a class="mix" href="./more.html">About Game</a></li>
+          </ul>
+        </nav>
+        <div class="data"></div>
+      </div>
+    </div>
+    <div class="more">
+      <div class="container">
+        <div class="stickers-list"></div>
+        <p class="title">Comments...</p>
+        <form class="form">
+          <div class="add-comment">
+            <input class="more-input" placeholder="write name..." type="text" />
+            <button class="more-btn">Add Comment</button>
+          </div>
+          <textarea class="more-text" placeholder="write comment..."></textarea>
+        </form>
+        <div class="more-comments"></div>
+        <!-- <div id="myModals" class="modals">
+          <div class="modal-contents">
+            <span class="close">&times;</span>
+            <button class="accept">
+              <img src="./assets/svg/delete-button-svgrepo-com.svg" alt="" />
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <template class="template">
+      <div class="both">
+        <div class="left">
+          <div class="inset">
+            <img class="url" src="" alt="" />
+          </div>
+          <p class="author"></p>
+          <p class="developer"></p>
+          <p class="size"></p>
+        </div>
+        <div class="right">
+          <div class="name"></div>
+          <div class="release-date"></div>
+          <p class="description"></p>
+          <p class="types"></p>
+          <div class="imgs">
+            <div class="img-row">
+              <img class="img1" src="" alt="" />
+            </div>
+            <div class="img-row">
+              <img class="img2" src="" alt="" />
+            </div>
+            <div class="img-row">
+              <img class="img3" src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template class="comments">
+      <div class="row-user">
+        <div class="row-users">
+          <img class="user-url" src="./assets/images/user.webp" alt="" />
+          <div class="user-row">
+            <p class="user-name"></p>
+            <p class="user-comment"></p>
+          </div>
+        </div>
+        <div class="date">
+          <div class="year">48949494</div>
+          <div class="modal-contents">
+            <span class="close">&times;</span>
+            <button class="accept">
+              <img src="./assets/svg/delete-button-svgrepo-com.svg" alt="" />
+            </button>
+          </div>
+          <img
+            class="com-delete"
+            src="./assets/svg/three-dots-vertical.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </template>
+    <template class="template-sticks">
+      <p class="more-sticks"></p>
+    </template>
+    <script src="./src/js/more.js"></script>
+  </body>
+</html>
